@@ -4,7 +4,6 @@
 <head>
     <title>WA_Lab07</title>
     <style>
-
         #locations,
         #penalty,
         #help {
@@ -14,19 +13,19 @@
             border: 1px solid #98ec96;
             background-color: bisque;
         }
-        
-        .game-field{
+
+        .game-field {
             display: grid;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 5xp;
             width: 300px;
         }
 
-        .location {
+        .img {
             width: 70px;
             height: 70px;
             background-size: cover;
-            background-size: no-repeat;    
+            background-size: no-repeat;
             background-position: center;
             border: 1px solid #98ec96;
         }
@@ -38,44 +37,134 @@
     <p>Click on the locations to search for treasure, beware the traps</p>
     <p id="locations">Number of locations checked is zero</p>
     <p id="penalty">Penalty is zero</p>
-    <p>Click for help</p>
+    <p onclick="help()">Click for help</p>
     <p id="help">Help report</p><br>
-    
+
 
     <div class="game-field">
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
+        <div ><img width= "110" id="i0" height="110" onclick="check(0)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i1" height="110" onclick="check(1)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i2" height="110" onclick="check(2)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i3" height="110" onclick="check(3)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i4" height="110" onclick="check(4)"src="bird img.jpg"/></div> 
+        
+    </div>
+    <div class="game-field">
+        <div ><img width= "110" id="i5" height="110" onclick="check(5)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i6" height="110" onclick="check(6)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i7" height="110" onclick="check(7)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i8" height="110" onclick="check(8)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i9" height="110" onclick="check(9)"src="bird img.jpg"/></div>  
+    </div>
+    <div class="game-field">
+        <div ><img width= "110" id="i10" height="110" onclick="check(10)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i11" height="110" onclick="check(11)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i12" height="110" onclick="check(12)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i13" height="110" onclick="check(13)"src="bird img.jpg"/></div> 
+        <div ><img width= "110" id="i14" height="110" onclick="check(14)"src="bird img.jpg"/></div>  
+    </div>
+    <div class="game-field">
+        <div ><img width= "110" id="i15" height="110" onclick="check(15)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i16" height="110" onclick="check(16)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i17" height="110" onclick="check(17)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i18" height="110" onclick="check(18)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i19" height="110" onclick="check(19)"src="bird img.jpg"/></div>  
+         
+    </div>
+    <div class="game-field">
+        <div ><img width= "110" id="i20" height="110" onclick="check(20)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i21" height="110" onclick="check(21)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i22" height="110" onclick="check(22)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i23" height="110" onclick="check(23)"src="bird img.jpg"/></div>  
+        <div ><img width= "110" id="i24" height="110" onclick="check(24)"src="bird img.jpg"/></div>   
+    </div>
 
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
+   
+        <script>
 
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
+            function check(x) {
+                console.log(x)
+            }
 
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
+        </script>
 
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-        <div class="location" style="background-image: url('bird img.jpg');"></div>
-                        
-                        
-     </div>
+
+    </div>
     
+    <script>
+        var checkCount=0;
+        var penalty=0;
+        var lastCheck=0;
+        var treasureLocation=5;
+        var trapLocation=18;
+        var gameOver= false;
+        let s=["i0","i1","i2","i3","i4","i5","i6","i7","i8","i9","i10","i11","i12","i13","i14","i15","i16","i17","i18","i19","i20","i21","i22","i23","i24"];
+        function check(position) {
+            if (gameOver) {
+                return;
+            }
+            
+            const imageId = s[position];
+            console.log(imageId)
+            const imageElement = document.getElementById(imageId);
+            console.log(imageElement)
+            if (position === treasureLocation) {
+                imageElement.src = 'image(1).jpg';
+                gameOver=true;
+                penalty-=3
+            } else if (position === trapLocation) {
+                imageElement.src = 'image2.jpg';
+                gameOver=true;
+                penalty+=4;
+
+            } else {
+                imageElement.src = "image2.jpg";
+                penalty++;
+            }
+            checkCount++;
+            
+
+
+            document.getElementById('locations').textContent = checkCount;
+            document.getElementById('penalty').textContent = penalty;
+            lastCheck = position;
+
+           
+        }
+        function help() {
+            const treasureRow = Math.floor(treasureLocation / 5);
+            const treasureCol = treasureLocation % 5;
+            const lastRow = Math.floor(lastCheck / 5);
+            const lastCol = lastCheck % 5;
+
+
+            if (Math.abs(treasureRow - lastRow) <= 1 && Math.abs(treasureCol - lastCol) <= 1 &&
+                Math.abs(treasureRow - lastRow) + Math.abs(treasureCol - lastCol) === 1) {
+                document.getElementById('help').textContent = "Can smell it";
+            }
+
+            else if (Math.abs(treasureRow - lastRow) + Math.abs(treasureCol - lastCol) === 2) {
+                document.getElementById('help').textContent = "Close Matie";
+            }
+            else {
+                document.getElementById('help').textContent = "Step Faster";
+            }
+
+
+            penalty += 2;
+
+            document.getElementById('penalty').textContent = penalty;
+        }
+
+
+
+
+
+
+
+
+    </script>
+
 
 
 </body>
