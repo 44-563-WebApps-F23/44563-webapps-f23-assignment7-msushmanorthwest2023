@@ -3,7 +3,7 @@
 An assignment on java script modifying the DOM and using anonymous callback functions.
 
 
-Hosted at [pirate]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-msushmanorthwest2023/pirate.htm)
+Hosted at [pirate]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-msushmanorthwest2023/pirate.html)
 
 Hosted at [react]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-msushmanorthwest2023/react.html)
 
